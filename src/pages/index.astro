@@ -1,11 +1,15 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import ReasonsComponent from "../components/reasonsComponent.astro";
+import RelojComponent from "../components/relojComponent.astro";
+import TitleComponent from "../components/titleComponent.astro";
 ---
 
 <Layout>
-	<Welcome />
+    <div class="flex flex-col my-5 w-full flex flex-col items-center gap-3">
+        <TitleComponent text="Cuanto tiempo llevamos juntos" />
+    </div>
+
+    <RelojComponent />
+
 </Layout>

@@ -1,0 +1,82 @@
+---
+// src/components/Countdown.astro
+// Importamos el script de utilidad para calcular el tiempo
+import { getElapsedTime } from '../scripts/clock.js';
+
+// Definimos la fecha de inicio
+const startDate = "2024-08-20T00:00:00"; // Fecha y hora de inicio: 20 de agosto de 2024 a las 00:00:00
+---
+
+<div id="countdown-timer" data-start-date={startDate} client:load>
+    <div class="grid grid-cols-3 gap-5 h-30 text-2xl font-body rounded-2xl bg-white shadow-md shadow-red-800/30 text-red-800 font-extrabold mx-5 md:mx-90">
+        <div class="  justify-center items-center flex flex-col text-center"><span id="years">0</span>Años</div>
+        <div class="  justify-center items-center flex flex-col text-center"><span id="months">0</span>Meses</div>
+        <div class=" justify-center items-center flex flex-col text-center"><span id="days">0</span>Días</div>
+    </div>
+</div>
+
+<script is:inline>
+    // El script del cliente necesita importar la función getElapsedTime
+    // desde el mismo lugar que el componente si usa bundler o usar la ruta correcta
+    // En este caso, lo pasaremos por data-attribute para simplificar la carga del cliente.
+
+    // Esta función es autoejecutable para inicializar el reloj
+    (function() {
+        // Accedemos al elemento contenedor y recuperamos la fecha de inicio
+        const container = document.getElementById('countdown-timer');
+        const startDate = container.dataset.startDate;
+
+        // Aquí duplicamos getElapsedTime o lo importamos de un bundle
+        // Para simplicidad en un script is:inline, lo incluimos directamente o lo hacemos global.
+        // La forma más robusta sería que Astro bundlee `countdown.js` y lo importemos aquí.
+        // Sin embargo, para `is:inline` y evitar problemas de módulos en el navegador,
+        // es más fácil pasar los datos y reescribir una versión simplificada aquí o que la lógica sea global.
+        // Opción 1: Re-implementar la lógica de cálculo aquí para este script inline (no ideal para DRY)
+        // Opción 2 (Mejor): Asegurarse que `countdown.js` sea un módulo global o parte del bundle de Astro.
+        // Para este ejemplo, haremos una versión "standalone" para el script inline.
+
+        function getElapsedTimeClient(startDateString) {
+            const startDate = new Date(startDateString);
+            const now = new Date();
+
+            if (startDate > now) {
+                return { years: 0, months: 0, days: 0, hours: 0, minutes: 0, seconds: 0 };
+            }
+
+            let years = now.getFullYear() - startDate.getFullYear();
+            let months = now.getMonth() - startDate.getMonth();
+            let days = now.getDate() - startDate.getDate();
+            let hours = now.getHours() - startDate.getHours();
+            let minutes = now.getMinutes() - startDate.getMinutes();
+            let seconds = now.getSeconds() - startDate.getSeconds();
+
+            if (seconds < 0) { minutes--; seconds += 60; }
+            if (minutes < 0) { hours--; minutes += 60; }
+            if (hours < 0) { days--; hours += 24; }
+            if (days < 0) {
+                const lastMonth = new Date(now.getFullYear(), now.getMonth() - 1, 0);
+                days += lastMonth.getDate();
+                months--;
+            }
+            if (months < 0) { years--; months += 12; }
+
+            return { years, months, days, hours, minutes, seconds };
+        }
+
+
+        const updateCountdown = () => {
+            const { years, months, days, hours, minutes, seconds } = getElapsedTimeClient(startDate);
+
+            document.getElementById('years').innerText = years;
+            document.getElementById('months').innerText = months;
+            document.getElementById('days').innerText = days;
+            document.getElementById('hours').innerText = hours;
+            document.getElementById('minutes').innerText = minutes;
+            document.getElementById('seconds').innerText = seconds;
+        };
+
+        // Actualizar inmediatamente y luego cada segundo
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    })();
+</script>

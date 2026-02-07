@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Layout.astro";
+import AnimeComponent from "../components/animeComponent.astro";
+import TitleComponent from "../components/titleComponent.astro";
+---
+
+<Layout>
+    <div class="my-5 mb-25 w-full flex flex-col items-center gap-3">
+        <TitleComponent text="Series que hemos visto" />
+        <div class="grid grid-cols-2 md:w-full w-100 md:grid-cols-6 gap-3 max-w-6xl justify-items-center">
+            <AnimeComponent image="https://cdn.myanimelist.net/images/anime/11/55225.jpg" text="Mahou Shoujo Madoka★Magica" />
+            <AnimeComponent image="https://cdn.myanimelist.net/images/anime/12/67333.jpg" text="Fate/stay night: Unlimited Blade Works" />
+            <AnimeComponent image="https://cdn.myanimelist.net/images/anime/1881/124810.jpg" text="Fate/stay night: Unlimited Blade Works 2nd Season" />
+            <AnimeComponent image="https://cdn.myanimelist.net/images/anime/1935/127974.jpg" text="Steins;Gate" />
+            <AnimeComponent image="https://cdn.myanimelist.net/images/anime/1804/95033.jpg" text="Clannad" />
+            <AnimeComponent image="https://cdn.myanimelist.net/images/anime/1299/110774.jpg" text="Clannad: After Story" />
+        </div>
+        <div class="grid grid-cols-2 md:w-full w-100 md:grid-cols-6 gap-3 max-w-6xl justify-items-center">
+            <AnimeComponent image="https://cdn.myanimelist.net/images/anime/3/14547.jpg" text="Baccano!" />
+            <AnimeComponent image="https://cdn.myanimelist.net/images/anime/1258/126929.jpg" text="Blue Lock" />
+            <AnimeComponent image="https://cdn.myanimelist.net/images/anime/1006/143302.jpg" text="[Oshi no Ko] 2nd Season" />
+            <AnimeComponent image="https://cdn.myanimelist.net/images/anime/1302/94882.jpg" text="Grand Blue" />
+            <AnimeComponent image="https://cdn.myanimelist.net/images/anime/1108/150583.jpg" text="Grand Blue 2nd Season" />
+            <AnimeComponent image="https://cdn.myanimelist.net/images/anime/1795/95088.jpg" text="Violet Evergarden" />
+        </div>
+        <TitleComponent text="Películas que hemos visto" />
+        <div class="grid grid-cols-2 md:w-full w-100 md:grid-cols-6 gap-3 max-w-6xl justify-items-center">
+            <AnimeComponent image="https://cdn.myanimelist.net/images/anime/1540/134808.jpg" text="Seishun Buta Yarou wa Odekake Sister no Yume wo Minai" />
+            <AnimeComponent image="https://cdn.myanimelist.net/images/anime/1937/138379.jpg" text="Seishun Buta Yarou wa Randoseru Girl no Yume wo Minai" />
+            <AnimeComponent image="https://cdn.myanimelist.net/images/anime/1825/110716.jpg" text="Violet Evergarden: La película" />
+            <AnimeComponent image="https://cdn.myanimelist.net/images/anime/1667/112943.jpg" text="Violet Evergarden Gaiden: Eien to Jidou Shuki Ningyou" />
+            <AnimeComponent image="https://m.media-amazon.com/images/M/MV5BMjExMTg5OTU0NF5BMl5BanBnXkFtZTcwMjMxMzMzMw@@._V1_.jpg"
+                            text="Wall-E" />
+            <AnimeComponent image="https://m.media-amazon.com/images/M/MV5BNGI4ZjQyMmEtMDc0Ny00ZDQxLWJiNGYtNzEzMTI2N2E1NWE2XkEyXkFqcGc@._V1_.jpg"
+                            text="Zootopia 2" />
+        </div>
+        <div class="grid grid-cols-2 md:w-full w-100 md:grid-cols-6 gap-3 max-w-6xl justify-items-center">
+            <AnimeComponent image="https://m.media-amazon.com/images/M/MV5BNWRhMDYyNDMtYTliYS00MGIxLWFkYzMtYmUyM2JhZjk5OTE4XkEyXkFqcGc@._V1_.jpg"
+                            text="Batman Begins" />
+            <AnimeComponent image="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg"
+                            text="The Dark Knight" />
+
+        </div>
+        <TitleComponent text="Series que estamos viendo" />
+        <div class="grid grid-cols-2 md:w-full w-100 md:grid-cols-6 gap-3 max-w-6xl justify-items-center">
+            <AnimeComponent image="https://cdn.myanimelist.net/images/anime/12/86890.jpg" text="Slam Dunk" />
+            <AnimeComponent image="https://cdn.myanimelist.net/images/anime/1460/98853.jpg" text="Usagi Drop" />
+            <AnimeComponent image="https://cdn.myanimelist.net/images/anime/1015/138006.jpg" text="Sousou no Frieren" />
+            <AnimeComponent image="https://cdn.myanimelist.net/images/anime/1749/145922.jpg" text="Chi. Chikyuu no Undou ni Tsuite" />
+        </div>
+    </div>
+
+</Layout>

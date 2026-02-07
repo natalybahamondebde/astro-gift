@@ -1,0 +1,10 @@
+---
+const {image, text} = Astro.props;
+---
+
+<div class="bg-white shadow-md shadow-red-800/30 rounded-2xl relative overflow-hidden hover:scale-105 transition-all duration-300">
+    <img src={image} class="object-cover h-full w-full" alt="Anime cover" />
+    <div class="absolute inset-0 bg-pink-400/15 z-5"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 z-10"></div>
+    <p class="absolute bottom-5 left-2 font-bold text-white z-15 font-body text-[13px]">{text}</p>
+</div>
