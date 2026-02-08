@@ -6,7 +6,7 @@ import TitleComponent from "../components/titleComponent.astro";
 ---
 
 <Layout>
-    <div class="w-full flex flex-col justify-center items-center">
+    <div class="flex flex-col justify-center items-center">
         <div class="grid grid-cols-3 w-90 mt-10">
             <div class="w-full justify-center items-center flex flex-col">
                 <div class="bg-white w-40 shadow-md shadow-black-30 h-40 rotate-20 overflow-hidden relative p-2">
@@ -61,9 +61,3 @@ import TitleComponent from "../components/titleComponent.astro";
 
 
 </Layout>
-
-<script>
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js');
-    }
-</script>
