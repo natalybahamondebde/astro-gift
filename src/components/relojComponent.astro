@@ -8,12 +8,24 @@ const startDate = "2024-08-20T00:00:00"; // Fecha y hora de inicio: 20 de agosto
 ---
 
 <div id="countdown-timer" data-start-date={startDate} client:load>
-    <div class="grid grid-cols-3 gap-5 h-30 font-body text-[20px] rounded-2xl bg-white shadow-md shadow-red-800/30 text-red-800 font-extrabold mx-5 md:mx-90">
-        <div class="  justify-center items-center flex flex-col text-center"><span id="years">0</span>Años</div>
-        <div class="  justify-center items-center flex flex-col text-center"><span id="months">0</span>Meses</div>
-        <div class=" justify-center items-center flex flex-col text-center"><span id="days">0</span>Días</div>
+    <div class="grid grid-cols-7 gap-1 h-15 font-body text-[20px] bg-pink-900/40 text-white mx-5 md:mx-90">
+        <div class=" pl-15 justify-center items-center flex flex-col text-center "><span id="years" class="text-5xl font-big">0</span></div>
+        <div class="  justify-center items-center flex flex-col text-center text-4xl font-big text-white">:</div>
+        <div class="  justify-center items-center flex flex-col text-center"><span id="months" class="text-5xl font-big">0</span></div>
+        <div class="  justify-center items-center flex flex-col text-center text-4xl font-big text-white">:</div>
+        <div class=" justify-center items-center flex flex-col text-center"><span id="days" class="text-5xl font-big">0</span></div>
+        <div class="  justify-center items-center flex flex-col text-center text-4xl font-big text-white">:</div>
+        <div class="pr-15 justify-center items-center flex flex-col text-center"><span id="hours" class="text-5xl font-big">0</span></div>
     </div>
-</div>
+    <div class="grid grid-cols-7 gap-1 h-15 font-body text-[20px] bg-pink-900/40 text-white mx-5 md:mx-90">
+        <div class=" pl-15 justify-center items-center flex flex-col text-center font-body">Años</div>
+        <div></div>
+        <div class="  justify-center items-center flex flex-col text-center font-body">Meses</div>
+        <div></div>
+        <div class="  justify-center items-center flex flex-col text-center font-body">Días</div>
+        <div></div>
+        <div class=" pr-15 justify-center items-center flex flex-col text-center font-body">Horas</div>
+    </div>
 
 <script is:inline>
     // El script del cliente necesita importar la función getElapsedTime

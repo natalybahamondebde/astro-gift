@@ -1,8 +1,10 @@
 @import "tailwindcss";
 @import '@fontsource-variable/comfortaa';
+@import '@fontsource/vt323';
 
 @theme {
     --font-body: 'Comfortaa Variable', system-ui;
+    --font-big: 'VT323', monospace;
     --animate-fade-in: fade-in 1s ease-out;
 }
 
