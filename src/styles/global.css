@@ -1,10 +1,12 @@
 @import "tailwindcss";
 @import '@fontsource-variable/comfortaa';
 @import '@fontsource/vt323';
+@import '@fontsource-variable/dancing-script';
 
 @theme {
     --font-body: 'Comfortaa Variable', system-ui;
     --font-big: 'VT323', monospace;
+    --font-hand:'Dancing Script Variable', cursive;
     --animate-fade-in: fade-in 1s ease-out;
 }
 

@@ -1,0 +1,265 @@
+---
+
+import Layout from "../layouts/Layout.astro";
+import SeparatorComponent from "../components/separatorComponent.astro";
+import TitleComponent from "../components/titleComponent.astro";---
+
+<Layout>
+    <div class="flex flex-col w-full items-center gap-0 mt-5">
+        <TitleComponent text="Nuestra Historia" />
+        <img src="https://cdn-icons-png.flaticon.com/512/10443/10443852.png" class="h-40 w-40"/>
+    </div>
+
+    <div class="w-full max-w-4xl mx-auto py-5 px-4">
+        <!-- Main Timeline Line -->
+        <div class="relative">
+            <!-- Vertical line -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-[#CF7486]/80 to-[#FF6B9D]/50 h-full z-0"></div>
+
+            <!-- Timeline Items -->
+            <div class="space-y-16 relative z-10">
+
+                <div class="flex flex-col items-center justify-center">
+                    <div class="flex flex-col md:flex-row md:items-start w-full max-w-2xl mx-auto">
+                        <div id="contentContainer" class="bg-white h-20 line-clamp-2 backdrop-blur-sm p-8 rounded-t-3xl shadow-2xl border border-white/30 md:ml-4 w-full text-center md:text-left ">
+                            <h3 class="text-[20px] font-bold text-gray-800 mb-3 font-body text-left">El día que volvimos a hablar</h3>
+                            <p class="text-gray-700 leading-relaxed text-[15px] font-body text-left">¿Recuerdas cuando me escribiste luego de un buen tiempo sin hablar? Me acuerdo perfectamente de que me enviaste un mensaje de "La number one" con una imagen adjunta de el top en quizzes de la comu en Amino. Ese fue el inicio del efecto mariposa que fueron muchísimos días de volver a conocerte, de entenderte mucho mejor, pues a pesar de que nos conocíamos hace unos 5, tal vez 6 años, la realidad era que no sabíamos prácticamente nada del otro, lo cual siento que es bastante increíble, pues desde hace muchísimo tiempo que he pensado que eres de mis personas favoritas en todo el mundo <span class="text-pink-700 font-bold bg-pink-400/20">(actualmente eres mi persona favorita, obvio)</span>, y siempre te he tenido respeto, pero aún así, me sorprendía como cada día que conversaba contigo fuera de la comunidad, sabía cosas nuevas sobre ti. Y es que nuestra dinámica esos días me llenaba de alegría el corazón. <br></br> <span class="text-pink-700 font-bold bg-pink-400/20">Siento que desde ese día le trajiste color a mi vida</span>, pues, genuinamente no recuerdo cómo podía vivir mi día a día anteriormente a eso sin ti, <span class="text-pink-700 font-bold bg-pink-400/20">eres tan esencial para mí como lo es el oxígeno, eres mi razón de vivir, mi fuerza del día a día</span>; pero bueno, siento que ese primer mes de cuando nos estábamos conociendo, o más bien, conociendo de verdad, son muy apreciados para mí, lo pasé muy bien, recuerdo cuando me enviabas fotos de cuando estabas trabajando, me enviabas fotos de tu sobrina, hasta que eventualmente me enviaste una foto tuya! Ese es un momento muy especial mí, era temprano en la mañana y te encontrabas tomando una taza de té, aún conservo esa foto, obvio. Siento que ver cómo te veías en realidad fue la última atadura que era para mí el mantener mis sentimientos por ti escondidos, el gran paso que significaba que nos estábamos conociendo como personas y no sólo como un intercambio de mensajes. <br></br>También en estos tiempos fue cuando empezamos a ver Madoka, y es que lo disfruté mucho, especialmente porque con esto pudimos interactuar por primera vez por llamada, y es que de manera inmediata pensé que tenías una voz muy linda, y que tu acento me llamaba mucho la atención. Pensar que esto pasó hace tanto tiempo, desde ello me abriste a un mundo completo de lo que son las cosas que te gustan, tus intereses, y disfruté de cada uno de ellos. <span class="text-pink-700 font-bold bg-pink-400/20">Pues, eres la persona más divertida e interesante que conozco, Pedro.</span></p>
+                            <div class="border-1 border-pink-400 rounded-2xl text-pink-700 h-6 w-20 text-[12px] flex flex-col bg-pink-500/20 font-body font-bold absolute top-8 right-3 items-center justify-center">11/07/24</div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-start w-full max-w-2xl mx-auto">
+                        <div class="h-8 md:ml-4 w-full text-center md:text-left ">
+                            <button id="toggleButton" class="cursor-pointer justify-center items-center rounded-b-3xl h-8 flex flex-col text-white md:items-center text-center w-full max-w-2xl mx-auto bg-pink-600/50">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Agosto 2024 -->
+                <div class="flex flex-col items-center justify-center">
+                    <div class="flex flex-col md:flex-row md:items-start w-full max-w-2xl mx-auto">
+                        <div id="contentContainer2" class="bg-white h-20 peer-checked:h-full peer-checked:line-clamp-none line-clamp-2 backdrop-blur-sm p-8 rounded-t-3xl shadow-2xl border border-white/30 md:ml-4 w-full text-center md:text-left">
+                            <h3 class="text-[20px] font-bold text-gray-800 mb-3 font-body text-left">Mostraste interés</h3>
+                            <p class="text-gray-700 leading-relaxed text-[15px] font-body text-left">Eventualmente y progresivamente empezamos a hablar más, a cada hora del día, e incluso nos mostrábamos bastante afecto, no es exageración decir que en esos días ya nos estábamos diciendo que nos amábamos, que eventualmente nos conoceríamos en persona y nos abrazaríamos, me decías que era tierna y que me querías comer a besos, entre algún que otro mensaje subido de tono en forma de broma (o eso creo). <br></br> Finalmente una noche se dio una conversación, en esta conversación yo básicamente me estaba refiriendo a mí misma, sobre que no era una persona lo "suficientemente" especial para tí, y dije también que "nunca llegaría a ser más que una amiga para ti" o algo por el estilo, y es que no sabes lo increíblemente nerviosa, emocionada y ansiosa que me tuviste cuando me dijiste que quizás en algún futuro podríamos intentarlo, <span class="text-pink-700 font-bold">quién diría que ese "futuro" se volvería nuestra realidad tan sólo diez días más tarde.</span> <br></br>Creo que esa noche me costó dormir, pues no dejaba de pensar en lo que dijiste, pues además bien claro dijiste que tenías sentimientos románticos por mí, y me hiciste sentir muy bien conmigo misma cuando mencionaste también muchas cosas lindas de mí. <span class="text-pink-700 font-bold">Sólo quiero agradecerte por darme esta oportunidad contigo, prometo que no te decepcionaré.</span></p>
+                            <div class="border-1 border-pink-400 rounded-2xl text-pink-700 h-6 w-20 text-[12px] flex flex-col bg-pink-500/20 font-body font-bold absolute top-8 right-3 items-center justify-center">10/08/24</div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-start w-full max-w-2xl mx-auto">
+                        <div class="h-8 md:ml-4 w-full text-center md:text-left ">
+                            <button id="toggleButton2" class="cursor-pointer justify-center items-center rounded-b-3xl h-8 flex flex-col text-white md:items-center text-center w-full max-w-2xl mx-auto bg-pink-600/50">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Octubre 2024 -->
+                <div class="flex flex-col items-center justify-center">
+                    <div class="flex flex-col md:flex-row md:items-start w-full max-w-2xl mx-auto">
+                        <div id="contentContainer3" class="bg-white h-20 peer-checked:h-full peer-checked:line-clamp-none line-clamp-2 backdrop-blur-sm p-8 rounded-t-3xl shadow-2xl border border-white/30 md:ml-4 w-full text-center md:text-left">
+                            <h3 class="text-[20px] font-bold text-gray-800 mb-3 font-body text-left">Nos volvimos pareja</h3>
+                            <p class="text-gray-700 leading-relaxed font-body text-left text-[15px]">Como puedes recordar bien, el inicio de nuestra relación no se dio de la manera más fluida que digamos, fue algo complejo para mí procesar el que me estabas eligiendo y que no era un sueño, tenía mucho miedo en ese momento porque no sabía cómo era que te sentías, ni cuál sería la forma "correcta" de reaccionar a lo que estaba pasando; pero bueno, al final, después de la llamada que tuvimos esa noche, morí de alegría cuando me pediste ser tu novia, inmediatamente agregué el mensaje a favoritos, aceptar serlo es la mejor decisión que haya tomado en mi vida.</p>
+                            <div class="border-1 border-pink-400 rounded-2xl text-pink-700 h-6 w-20 text-[12px] flex flex-col bg-pink-500/20 font-body font-bold absolute top-8 right-3 items-center justify-center">20/08/24</div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-start w-full max-w-2xl mx-auto">
+                        <div class="h-8 md:ml-4 w-full text-center md:text-left ">
+                            <button id="toggleButton3" class="cursor-pointer justify-center items-center rounded-b-3xl h-8 flex flex-col text-white md:items-center text-center w-full max-w-2xl mx-auto bg-pink-600/50">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diciembre 2024 -->
+                <div class="flex flex-col items-center justify-center">
+                    <div class="flex flex-col md:flex-row md:items-start w-full max-w-2xl mx-auto">
+                        <div id="contentContainer4" class="bg-white h-20 peer-checked:h-full peer-checked:line-clamp-none line-clamp-2 backdrop-blur-sm p-8 rounded-t-3xl shadow-2xl border border-white/30 md:ml-4 w-full text-center md:text-left">
+                            <h3 class="text-[20px] font-bold text-gray-800 mb-3 font-body text-left">Nuestro primer año</h3>
+                            <p class="text-gray-700 leading-relaxed font-body text-left text-[15px]">
+                            </p>
+                            <div class="border-1 border-pink-400 rounded-2xl text-pink-700 h-6 w-20 text-[12px] flex flex-col bg-pink-500/20 font-body font-bold absolute top-8 right-3 items-center justify-center">08/01/26</div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-start w-full max-w-2xl mx-auto">
+                        <div class="h-8 md:ml-4 w-full text-center md:text-left ">
+                            <button id="toggleButton4" class="cursor-pointer justify-center items-center rounded-b-3xl h-8 flex flex-col text-white md:items-center text-center w-full max-w-2xl mx-auto bg-pink-600/50">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Febrero 2025 -->
+                <div class="flex flex-col items-center justify-center">
+                    <div class="flex flex-col md:flex-row md:items-start w-full max-w-2xl mx-auto">
+                        <div id="contentContainer5" class="bg-white h-20 peer-checked:h-full peer-checked:line-clamp-none line-clamp-2 backdrop-blur-sm p-8 rounded-t-3xl shadow-2xl border border-white/30 md:ml-4 w-full text-center md:text-left">
+                            <h3 class="text-[20px] font-bold text-gray-800 mb-3 font-body text-left">Nos vimos en persona</h3>
+                            <p class="text-gray-700 leading-relaxed font-body text-left text-[15px]">
+                            </p>
+                            <div class="border-1 border-pink-400 rounded-2xl text-pink-700 h-6 w-20 text-[12px] flex flex-col bg-pink-500/20 font-body font-bold absolute top-8 right-3 items-center justify-center">08/01/26</div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-start w-full max-w-2xl mx-auto">
+                        <div class="h-8 md:ml-4 w-full text-center md:text-left ">
+                            <button id="toggleButton5" class="cursor-pointer justify-center items-center rounded-b-3xl h-8 flex flex-col text-white md:items-center text-center w-full max-w-2xl mx-auto bg-pink-600/50">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mayo 2025 -->
+                <div class="flex flex-col items-center justify-center">
+                    <div class="flex flex-col md:flex-row md:items-start w-full max-w-2xl mx-auto">
+                        <div id="contentContainer6" class="bg-white h-20 peer-checked:h-full peer-checked:line-clamp-none line-clamp-2 backdrop-blur-sm p-8 rounded-t-3xl shadow-2xl border border-white/30 md:ml-4 w-full text-center md:text-left">
+                            <h3 class="text-[20px] font-bold text-gray-800 mb-3 font-body text-left">Nuestro primer beso</h3>
+                            <p class="text-gray-700 leading-relaxed font-body text-left text-[15px]">Alguna vez te mencioné sobre mis pensamientos durante nuestro primer beso, y es que tal vez te parezca tonto darle tanta importancia pues en los momentos que estuviste conmigo pudimos compartir muchísimos besos, realmente que disfrutamos de nuestro tiempo, incluso a veces pasando HORAS besándonos, que lindos recuerdos. Fue el primer día que llegaste a Chiloé, estábamos en la residencia donde te estabas quedando, en el cuarto, si no recuerdo mal poco antes te habías retirado para ir al baño, y en ese momento yo me quedé pensando en que se me estaba haciendo difícil encontrar cuál sería el momento adecuado para darnos un beso, me sentía ansiosa pensando en si acaso yo debería dar el primer paso o esperar a que tú lo des, pero al final lo que hice fue mostrar de alguna manera con mi lenguaje corporal que me sentía cómoda si acaso intentabas besarme, no recuerdo muy bien cómo se dio nuestro primer beso, pero recuerdo que no me sentí nerviosa, ni incómoda, se sintió muy bien, y sentía que era correcto, que tus labios encajaban perfectamente con los míos. Desde ahí ya tuvimos la confianza total para seguir besándonos, fue muy chistoso, pues ahí fue cuando ya ambos nos soltamos completamente y tomamos toda la confianza del mundo. Genuinamente, uno de los momentos más lindos fue ese primer día que pasamos en tu habitación de la residencia, aunque la verdad, guardo cada momento que pasé contigo en persona con muchísimo amor y cariño. Cada día que pasamos a solas, cada momento que pasamos fuera paseando, mostrándote lugares, en mi casa viendo películas, viendo anime, jugando en mi computador, dándonos besitos a escondidas de mi familia. Los días que pasé contigo diría con confianza que fueron los mejores días de mi vida, creo que nunca me había despertado antes con tanta emoción.
+                            </p>
+                            <div class="border-1 border-pink-400 rounded-2xl text-pink-700 h-6 w-20 text-[12px] flex flex-col bg-pink-500/20 font-body font-bold absolute top-8 right-3 items-center justify-center">08/01/26</div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-start w-full max-w-2xl mx-auto">
+                        <div class="h-8 md:ml-4 w-full text-center md:text-left ">
+                            <button id="toggleButton6" class="cursor-pointer justify-center items-center rounded-b-3xl h-8 flex flex-col text-white md:items-center text-center w-full max-w-2xl mx-auto bg-pink-600/50">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Febrero 2026 -->
+                <div class="flex flex-col items-center justify-center">
+                    <div class="flex flex-col md:flex-row md:items-start w-full max-w-2xl mx-auto">
+                        <div id="contentContainer7" class="bg-white h-20 peer-checked:h-full peer-checked:line-clamp-none line-clamp-2 backdrop-blur-sm p-8 rounded-t-3xl shadow-2xl border border-white/30 md:ml-4 w-full text-center md:text-left">
+                            <h3 class="text-[20px] font-bold text-gray-800 mb-3 font-body text-left">1.5 años juntos</h3>
+                            <p class="text-gray-700 leading-relaxed font-body text-left text-[15px]">
+                            </p>
+                            <div class="border-1 border-pink-400 rounded-2xl text-pink-700 h-6 w-20 text-[12px] flex flex-col bg-pink-500/20 font-body font-bold absolute top-8 right-3 items-center justify-center">20/02/26</div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-start w-full max-w-2xl mx-auto">
+                        <div class="h-8 md:ml-4 w-full text-center md:text-left ">
+                            <button id="toggleButton7" class="cursor-pointer justify-center items-center rounded-b-3xl h-8 flex flex-col text-white md:items-center text-center w-full max-w-2xl mx-auto bg-pink-600/50">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</Layout>
+
+
+<script>
+    const button = document.getElementById("toggleButton");
+    const container = document.getElementById("contentContainer");
+
+    const button2 = document.getElementById("toggleButton2");
+    const container2 = document.getElementById("contentContainer2");
+
+    const button3 = document.getElementById("toggleButton3");
+    const container3 = document.getElementById("contentContainer3");
+
+    const button4 = document.getElementById("toggleButton4");
+    const container4 = document.getElementById("contentContainer4");
+
+    const button5 = document.getElementById("toggleButton5");
+    const container5 = document.getElementById("contentContainer5");
+
+    const button6 = document.getElementById("toggleButton6");
+    const container6 = document.getElementById("contentContainer6");
+
+    const button7 = document.getElementById("toggleButton7");
+    const container7 = document.getElementById("contentContainer7");
+
+    let isOpen = false;
+    let isOpen2 = false;
+    let isOpen3 = false;
+    let isOpen4 = false;
+    let isOpen5 = false;
+    let isOpen6 = false;
+    let isOpen7 = false;
+
+    button.addEventListener("click", () => {
+        if (isOpen) {
+            container.classList.remove("h-full", "line-clamp-none");
+            container.classList.add("h-20", "line-clamp-2");
+        } else {
+            container.classList.remove("h-20", "line-clamp-2");
+            container.classList.add("h-full", "line-clamp-none");
+        }
+        isOpen = !isOpen;
+    });
+
+    button2.addEventListener("click", () => {
+        if (isOpen2) {
+            container2.classList.remove("h-full", "line-clamp-none");
+            container2.classList.add("h-20", "line-clamp-2");
+        } else {
+            container2.classList.remove("h-20", "line-clamp-2");
+            container2.classList.add("h-full", "line-clamp-none");
+        }
+        isOpen2 = !isOpen2;
+    });
+
+    button3.addEventListener("click", () => {
+        if (isOpen3) {
+            container3.classList.remove("h-full", "line-clamp-none");
+            container3.classList.add("h-20", "line-clamp-2");
+        } else {
+            container3.classList.remove("h-20", "line-clamp-2");
+            container3.classList.add("h-full", "line-clamp-none");
+        }
+        isOpen3 = !isOpen3;
+    });
+
+    button4.addEventListener("click", () => {
+        if (isOpen4) {
+            container4.classList.remove("h-full", "line-clamp-none");
+            container4.classList.add("h-20", "line-clamp-2");
+        } else {
+            container4.classList.remove("h-20", "line-clamp-2");
+            container4.classList.add("h-full", "line-clamp-none");
+        }
+        isOpen4 = !isOpen4;
+    });
+
+    button5.addEventListener("click", () => {
+        if (isOpen5) {
+            container5.classList.remove("h-full", "line-clamp-none");
+            container5.classList.add("h-20", "line-clamp-2");
+        } else {
+            container5.classList.remove("h-20", "line-clamp-2");
+            container5.classList.add("h-full", "line-clamp-none");
+        }
+        isOpen5 = !isOpen5;
+    });
+
+    button6.addEventListener("click", () => {
+        if (isOpen6) {
+            container6.classList.remove("h-full", "line-clamp-none");
+            container6.classList.add("h-20", "line-clamp-2");
+        } else {
+            container6.classList.remove("h-20", "line-clamp-2");
+            container6.classList.add("h-full", "line-clamp-none");
+        }
+        isOpen6 = !isOpen6;
+    });
+
+    button7.addEventListener("click", () => {
+        if (isOpen7) {
+            container7.classList.remove("h-full", "line-clamp-none");
+            container7.classList.add("h-20", "line-clamp-2");
+        } else {
+            container7.classList.remove("h-20", "line-clamp-2");
+            container7.classList.add("h-full", "line-clamp-none");
+        }
+        isOpen7 = !isOpen7;
+    });
+</script>

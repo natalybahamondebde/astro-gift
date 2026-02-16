@@ -4,14 +4,46 @@ import Layout from "../layouts/Layout.astro";
 import TitleComponent from "../components/titleComponent.astro";---
 
 <Layout>
+
+    <div class="border-[#654FDE] bg-[#CAC3F4]/9 border-dotted border-1 mx-5 md:mx-50 my-5 rounded">
+
     <div class="flex flex-col my-5 w-full items-center gap-0">
-        <TitleComponent text="Cartas para ti" />
+        <TitleComponent text="Álbum de fotos" />
     </div>
     <div class="flex flex-col my-5 w-full items-center gap-0">
-    <div class="grid grid-cols-2 gap-5 w-90">
-        <img src="https://drive.google.com/thumbnail?id=1f1tOxxOv1PTDv1Z9tzlCElzh13TdwE_U&sz=w1000" class="h-full w-full object-cover hover:scale-105 transition-all duration-300 border-1 border-pink-400" />
-        <img src="https://drive.google.com/thumbnail?id=1f1tOxxOv1PTDv1Z9tzlCElzh13TdwE_U&sz=w1000" class="h-full w-full object-cover hover:scale-105 transition-all duration-300" />
-    </div>
+        <div class="grid grid-cols-2 gap-5 w-90 ">
+            <div class="grid grid-rows-3 gap-5">
+                <div class="bg-white p-2 pb-10 shadow-md shadow-[#27187E]/30 h-55 w-45 relative items-center justify-center">
+                    <img src="https://drive.google.com/thumbnail?id=159UaIuWkZ_TTpzhrUoQpB1PTOGs7IHVr&sz=w1000" class="h-full w-full object-cover" />
+                    <p class="font-hand text-center text-[17px] mt-2">01-12-25</p>
+                </div>
+                <div class="bg-white p-2 pb-10 shadow-md shadow-[#27187E]/30 h-55 w-45 relative items-center justify-center">
+                    <img src="https://drive.google.com/thumbnail?id=159UaIuWkZ_TTpzhrUoQpB1PTOGs7IHVr&sz=w1000" class="h-full w-full object-cover" />
+                    <p class="font-hand text-center text-[17px] mt-2">01-12-25</p>
+                </div>
+                <div class="bg-white p-2 pb-10 shadow-md shadow-[#27187E]/30 h-55 w-45 relative items-center justify-center">
+                    <img src="https://drive.google.com/thumbnail?id=159UaIuWkZ_TTpzhrUoQpB1PTOGs7IHVr&sz=w1000" class="h-full w-full object-cover" />
+                    <p class="font-hand text-center text-[17px] mt-2">01-12-25</p>
+                </div>
+            </div>
+            <div class="grid grid-rows-3 gap-5">
+                <div class="bg-white p-2 pb-10 shadow-md shadow-[#27187E]/30 h-55 w-45 relative items-center justify-center">
+                    <img src="https://drive.google.com/thumbnail?id=159UaIuWkZ_TTpzhrUoQpB1PTOGs7IHVr&sz=w1000" class="h-full w-full object-cover" />
+                    <p class="font-hand text-center text-[17px] mt-2">01-12-25</p>
+                </div>
+                <div class="bg-white p-2 pb-10 shadow-md shadow-[#27187E]/30 h-55 w-45 relative items-center justify-center">
+                    <img src="https://drive.google.com/thumbnail?id=159UaIuWkZ_TTpzhrUoQpB1PTOGs7IHVr&sz=w1000" class="h-full w-full object-cover" />
+                    <p class="font-hand text-center text-[17px] mt-2">01-12-25</p>
+                </div>
+                <div class="bg-white p-2 pb-10 shadow-md shadow-[#27187E]/30 h-55 w-45 relative items-center justify-center">
+                    <img src="https://drive.google.com/thumbnail?id=159UaIuWkZ_TTpzhrUoQpB1PTOGs7IHVr&sz=w1000" class="h-full w-full object-cover" />
+                    <p class="font-hand text-center text-[17px] mt-2">01-12-25</p>
+                </div>
+            </div>
+
     </div>
 
+        <a href="/story"><button class="bg-[#8776E5] mt-10  transition-all duration-300 shadow-md cursor-pointer shadow-[#8776E5]/50 rounded-2xl h-13 w-60 text-white font-body text-center justify-center content-center items-center hover:border-[#654FDE] border-[#8776E5] font-bold border-1 hover:bg-white hover:text-[#654FDE]">Leer Nuestra Historia</button>
+        </a>
+    </div>
 </Layout>
